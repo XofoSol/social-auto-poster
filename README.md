@@ -25,6 +25,7 @@ Social Auto Poster publica automáticamente tus posts de WordPress en las redes 
 - ✅ Vista de estado en el listado de posts
 - ✅ Botón de republicación manual
 - ✅ Prueba de conexión desde el panel de ajustes
+- ✅ Generación de texto por IA (DeepSeek u OpenAI)
 - ✅ Registro de actividad (logs) filtrable por fecha
 - ✅ Soporte multilingüe (i18n listo)
 - ✅ Diseño extensible (interfaz PlatformInterface)
@@ -71,6 +72,32 @@ Social Auto Poster publica automáticamente tus posts de WordPress en las redes 
 2. Solicita los permisos: `w_member_social`, `openid`, `profile`, `email`
 3. Genera un Access Token y obtén tu Person URN (formato: `urn:li:person:xxx`)
 
+## Generación por Inteligencia Artificial
+
+El plugin puede generar automáticamente el texto de cada publicación usando IA, adaptado al tono y límites de cada red social.
+
+### Proveedores Soportados
+
+| Proveedor | Modelo por defecto | Costo |
+|-----------|-------------------|-------|
+| **DeepSeek** | `deepseek-chat` | Gratuito / créditos |
+| **OpenAI** | `gpt-4o-mini` | Pago por uso |
+
+### Configuración
+
+1. Ve a la pestaña **IA** en el panel de Social Auto Poster
+2. Selecciona el proveedor (DeepSeek recomendado)
+3. Ingresa tu API Key
+4. Marca las plataformas donde quieres que se use la IA
+5. Opcional: añade instrucciones personalizadas (ej: "Usa un tono divertido con emojis")
+
+### Comportamiento
+
+- La IA genera un texto distinto para cada red social, respetando su límite de caracteres
+- Si la generación por IA falla (API caída, límite excedido), se usa el texto normal del post como fallback
+- Se puede habilitar/deshabilitar por post individual desde el meta box en el editor
+- El modelo se puede cambiar según el proveedor seleccionado
+
 ## Desarrollo
 
 ### Extensibilidad
@@ -108,8 +135,9 @@ do_action('sap_register_platforms', $plugin_instance);
 ### 1.0.0
 - Versión inicial
 - Soporte para X, Threads, Instagram, Facebook y LinkedIn
-- Selección por categorías
+- Selección por categorías (incluir/excluir)
 - Facebook Pages support
+- Generación de texto por IA (DeepSeek / OpenAI)
 - Meta box en editor de posts
 - Logs de actividad
 - Prueba de conexión
