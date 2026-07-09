@@ -120,6 +120,9 @@ class Main {
         // Inicializar publicador (se engancha a sap_publish_post).
         $publisher = new Publisher($this);
         $publisher->init();
+
+        // Inicializar hooks OAuth de LinkedIn.
+        Platforms\LinkedIn::register_oauth_hooks();
     }
 
     /**

@@ -70,7 +70,11 @@ Social Auto Poster publica automáticamente tus posts de WordPress en las redes 
 ### LinkedIn
 1. Ve a [LinkedIn Developer](https://developer.linkedin.com/) y crea una app
 2. Solicita los permisos: `w_member_social`, `openid`, `profile`, `email`
-3. Genera un Access Token y obtén tu Person URN (formato: `urn:li:person:xxx`)
+3. En la app, agrega la URL de redirección OAuth 2.0: `https://tudominio.com/wp-admin/admin-post.php?action=sap_linkedin_oauth_callback`
+4. Copia el **Client ID** y **Client Secret** en el plugin (pestaña LinkedIn)
+5. Guarda los cambios y haz clic en **"Conectar con LinkedIn"**
+6. Autoriza la aplicación en la ventana de LinkedIn
+7. El plugin obtendrá automáticamente el token de acceso y tu ID de usuario
 
 ## Generación por Inteligencia Artificial
 
