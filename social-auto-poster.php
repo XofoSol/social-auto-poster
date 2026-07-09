@@ -83,7 +83,7 @@ function sap_activate() {
         'ai'                => [
             'provider'      => 'deepseek',
             'api_key'       => '',
-            'model'         => 'deepseek-chat',
+            'model'         => 'deepseek-v4-flash',
             'enabled_for'   => [],
             'instructions'  => '',
         ],

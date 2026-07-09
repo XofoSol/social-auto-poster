@@ -80,8 +80,8 @@ El plugin puede generar automáticamente el texto de cada publicación usando IA
 
 | Proveedor | Modelo por defecto | Costo |
 |-----------|-------------------|-------|
-| **DeepSeek** | `deepseek-chat` | Gratuito / créditos |
-| **OpenAI** | `gpt-4o-mini` | Pago por uso |
+| **DeepSeek** | `deepseek-v4-flash` | Bajo (más barato que OpenAI) |
+| **OpenAI** | `gpt-5.5-mini` | Moderado |
 
 ### Configuración
 

@@ -14,14 +14,14 @@ class AI {
         'deepseek' => [
             'name'       => 'DeepSeek',
             'api_url'    => 'https://api.deepseek.com/v1/chat/completions',
-            'models'     => ['deepseek-chat'],
-            'default_model' => 'deepseek-chat',
+            'models'     => ['deepseek-v4-flash'],
+            'default_model' => 'deepseek-v4-flash',
         ],
         'openai' => [
             'name'       => 'OpenAI',
             'api_url'    => 'https://api.openai.com/v1/chat/completions',
-            'models'     => ['gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-3.5-turbo'],
-            'default_model' => 'gpt-4o-mini',
+            'models'     => ['gpt-5.5-nano', 'gpt-5.5-mini'],
+            'default_model' => 'gpt-5.5-mini',
         ],
     ];
 

@@ -175,7 +175,7 @@ class Admin {
 
             $sanitized['ai']['model'] = !empty($ai['model'])
                 ? sanitize_text_field($ai['model'])
-                : 'deepseek-chat';
+                : 'deepseek-v4-flash';
 
             $sanitized['ai']['instructions'] = !empty($ai['instructions'])
                 ? sanitize_textarea_field($ai['instructions'])
@@ -745,7 +745,7 @@ class Admin {
     private function render_ai_tab() {
         $ai_settings = AI::get_ai_settings();
         $provider = $ai_settings['provider'] ?? 'deepseek';
-        $model    = $ai_settings['model'] ?? 'deepseek-chat';
+        $model    = $ai_settings['model'] ?? 'deepseek-v4-flash';
         $api_key  = $ai_settings['api_key'] ?? '';
         $instructions = $ai_settings['instructions'] ?? '';
         $enabled_for  = $ai_settings['enabled_for'] ?? [];
@@ -812,13 +812,11 @@ class Admin {
                     <td>
                         <select id="sap_ai_model" name="sap_settings[ai][model]">
                             <optgroup label="DeepSeek" class="sap-model-group" data-provider="deepseek">
-                                <option value="deepseek-chat" <?php selected($model, 'deepseek-chat'); ?>>DeepSeek Chat (V3)</option>
+                                <option value="deepseek-v4-flash" <?php selected($model, 'deepseek-v4-flash'); ?>>DeepSeek V4 Flash</option>
                             </optgroup>
                             <optgroup label="OpenAI" class="sap-model-group" data-provider="openai">
-                                <option value="gpt-4o-mini" <?php selected($model, 'gpt-4o-mini'); ?>>GPT-4o Mini</option>
-                                <option value="gpt-4o" <?php selected($model, 'gpt-4o'); ?>>GPT-4o</option>
-                                <option value="gpt-4-turbo" <?php selected($model, 'gpt-4-turbo'); ?>>GPT-4 Turbo</option>
-                                <option value="gpt-3.5-turbo" <?php selected($model, 'gpt-3.5-turbo'); ?>>GPT-3.5 Turbo</option>
+                                <option value="gpt-5.5-nano" <?php selected($model, 'gpt-5.5-nano'); ?>>GPT-5.5 Nano</option>
+                                <option value="gpt-5.5-mini" <?php selected($model, 'gpt-5.5-mini'); ?>>GPT-5.5 Mini</option>
                             </optgroup>
                         </select>
                         <p class="description">
