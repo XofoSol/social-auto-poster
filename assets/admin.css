@@ -1,0 +1,177 @@
+/* Social Auto Poster - Admin Styles */
+
+.sap-admin-wrap {
+    max-width: 1000px;
+}
+
+.sap-admin-wrap .nav-tab-wrapper {
+    margin-bottom: 0;
+    border-bottom: 1px solid #c3c4c7;
+    padding-left: 0;
+}
+
+.sap-admin-wrap .sap-tab-content {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #c3c4c7;
+    border-top: none;
+    margin-top: -1px;
+    min-height: 400px;
+}
+
+.sap-admin-wrap .sap-platform-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sap-admin-wrap .sap-platform-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.sap-status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.sap-status-configured {
+    background: #f6ffed;
+    color: #389e0d;
+    border: 1px solid #b7eb8f;
+}
+
+.sap-status-not-configured {
+    background: #fff7e6;
+    color: #d46b08;
+    border: 1px solid #ffd591;
+}
+
+.sap-fb-pages-section {
+    margin-top: 20px !important;
+    padding: 20px !important;
+    background: #f0f6fc;
+    border-left: 4px solid #1877f2;
+    border-radius: 2px;
+}
+
+.sap-fb-pages-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #1d2327;
+}
+
+.sap-fb-pages-list table {
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.sap-fb-pages-list table th {
+    font-weight: 600;
+    background: #f6f7f7;
+}
+
+.sap-fb-pages-list table td {
+    vertical-align: middle;
+}
+
+.sap-processed-notice {
+    padding: 10px 12px;
+    background: #f6fef7;
+    border-left: 4px solid #46b450;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.sap-processed-notice details {
+    margin-top: 8px;
+}
+
+.sap-processed-notice summary {
+    cursor: pointer;
+    color: #2271b1;
+    font-size: 12px;
+}
+
+.sap-processed-notice ul {
+    margin: 8px 0 4px 15px;
+    list-style: disc;
+}
+
+/* Checkbox platform list */
+.sap-admin-wrap .form-table td fieldset label {
+    padding: 6px 0;
+}
+
+.sap-admin-wrap .form-table td fieldset label input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* Category selector */
+.sap-admin-wrap .category-selector {
+    margin-top: 15px;
+}
+
+/* Tab content transitions */
+.sap-tab-content {
+    position: relative;
+}
+
+/* Botón de prueba */
+#sap-test-result {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#sap-test-result .success {
+    color: #46b450;
+}
+
+#sap-test-result .error {
+    color: #dc3232;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .sap-admin-wrap .sap-platform-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Log details table */
+.sap-admin-wrap .widefat details {
+    cursor: pointer;
+}
+
+.sap-admin-wrap .widefat details summary {
+    color: #2271b1;
+}
+
+/* Tooltip en listado de posts */
+.column-sap_status {
+    position: relative;
+}
+
+.column-sap_status .sap-tooltip {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    z-index: 10;
+    min-width: 200px;
+}
+
+.column-sap_status:hover .sap-tooltip {
+    display: block;
+}

@@ -1,0 +1,50 @@
+# Copyright (C) 2024 Social Auto Poster
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Social Auto Poster 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com\n"
+"POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Reasonix\n"
+"X-Domain: social-auto-poster\n"
+
+#. Plugin name
+msgid "Social Auto Poster"
+msgstr ""
+
+#. Sample strings - regenerate with: wp i18n make-pot . languages/social-auto-poster.pot
+msgid "X (Twitter)"
+msgstr ""
+
+msgid "Facebook"
+msgstr ""
+
+msgid "Instagram"
+msgstr ""
+
+msgid "Threads"
+msgstr ""
+
+msgid "LinkedIn"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Categorías"
+msgstr ""
+
+msgid "Registro"
+msgstr ""
+
+msgid "Configura las credenciales para %s. Las credenciales se almacenan en la base de datos de WordPress."
+msgstr ""
+
+msgid "Guardar configuración"
+msgstr ""
